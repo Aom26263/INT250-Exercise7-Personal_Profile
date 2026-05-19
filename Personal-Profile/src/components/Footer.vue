@@ -2,7 +2,7 @@
 
 <template>
   <footer class="bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800 transition-colors duration-300">
-    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:py-0 sm:h-16">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:py-0 sm:h-30">
 
       <!-- Brand -->
       <span class="text-2xl font-bold text-gray-900 dark:text-white tracking-tight">
@@ -17,14 +17,18 @@
           class="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
         >GitHub</a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/sorrawich-prasopsub-1bb1423b3/"
           target="_blank"
           class="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
         >LinkedIn</a>
         <a
-          href="#"
+          href="https://www.instagram.com/axmsz_p"
           class="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-        >Source Code</a>
+        >Instagram</a>
+        <a
+          href="https://www.facebook.com/sorrawich.prasopsub"
+          class="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+        >Facebook</a>
       </div>
 
       <!-- Copyright -->

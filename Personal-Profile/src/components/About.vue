@@ -11,14 +11,14 @@
 
       <!-- Paragraphs -->
       <p class="text-gray-800 dark:text-gray-200 text-sm sm:text-base leading-relaxed mb-4 sm:mb-5">
-        I'm Sorrawich Prasopsub (Aom), an IT student at King Mongkut's University of Technology
-        Thonburi specializing in Information Technology and Full Stack Development.
+        Hi, I'm Sorrawich Prasopsub (Aom), a second-year Information Technology (IT) student at King Mongkut's University of Technology Thonburi (KMUTT) for the 2025 academic year.
+        I have a strong passion for coding and web development. I love diving into the full-stack system, 
+        constantly learning how to build scalable and high-performance web applications using clean architecture and modern technologies.
       </p>
 
       <p class="text-gray-800 dark:text-gray-200 text-sm sm:text-base leading-relaxed mb-8 sm:mb-12">
-        I enjoy building scalable and high-performance web applications with clean architecture,
-        efficient backend systems, and modern frontend technologies to deliver seamless digital
-        experiences.
+        My ultimate career goal is to become a versatile Full Stack Developer—a programmer who can seamlessly bridge the gap between crafting efficient backend systems and 
+        designing intuitive frontend interfaces to deliver complete, seamless digital experiences.
       </p>
 
       <!-- Stats -->

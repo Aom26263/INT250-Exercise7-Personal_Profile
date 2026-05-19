@@ -6,6 +6,7 @@ import Stack from './components/Stack.vue'
 import Project from './components/Project.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
+import Activities from './components/Activities.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import Footer from './components/Footer.vue'
   <About />
   <Stack />
   <Project />
+  <Activities />
   <Contact />
   <Footer />
 </template>

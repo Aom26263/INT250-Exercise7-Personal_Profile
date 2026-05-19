@@ -47,6 +47,10 @@ function goTo(section, id) {
         <a href="#" @click.prevent="goTo('Contact', 'contact')"
           :class="['text-sm font-medium transition-colors pb-0.5', active === 'Contact' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white']"
         >Contact</a>
+
+        <a href="#" @click.prevent="goTo('Activities', 'activities')"
+          :class="['text-sm font-medium transition-colors pb-0.5', active === 'activities' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white']"
+        >Activities</a>
       </div>
 
       <!-- Right side: dark toggle + hamburger -->

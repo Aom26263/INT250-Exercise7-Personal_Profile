@@ -1,4 +1,30 @@
-<script setup></script>
+<script setup>
+function smoothScrollTo(id) {
+  const el = document.getElementById(id)
+  if (!el) return
+
+  const navbarHeight = 64
+  const targetY = el.getBoundingClientRect().top + window.scrollY - navbarHeight
+  const startY = window.scrollY
+  const distance = targetY - startY
+  const duration = 800
+  let startTime = null
+
+  function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2
+  }
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp
+    const elapsed = timestamp - startTime
+    const progress = Math.min(elapsed / duration, 1)
+    window.scrollTo(0, startY + distance * easeInOutCubic(progress))
+    if (progress < 1) requestAnimationFrame(step)
+  }
+
+  requestAnimationFrame(step)
+}
+</script>
 
 <template>
   <section id="hero" class="min-h-screen bg-slate-100 dark:bg-gray-950 flex items-center transition-colors duration-300 pt-16">
@@ -23,12 +49,12 @@
         </p>
 
         <div class="flex gap-4 justify-center sm:justify-start">
-          <button class="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-all duration-200 cursor-pointer hover:shadow-lg hover:shadow-blue-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm sm:text-base">
+          <a href="#projects" @click.prevent="smoothScrollTo('projects')" class="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-all duration-200 cursor-pointer hover:shadow-lg hover:shadow-blue-500/40 hover:-translate-y-0.5 active:translate-y-0 text-sm sm:text-base">
             View My Work
-          </button>
-          <button class="border-2 border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 font-bold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-all duration-200 cursor-pointer bg-transparent hover:bg-gray-200 dark:hover:bg-gray-800 hover:border-gray-500 dark:hover:border-gray-400 hover:-translate-y-0.5 active:translate-y-0 text-sm sm:text-base">
-            Learn More
-          </button>
+          </a>
+          <a href="#contact" @click.prevent="smoothScrollTo('contact')" class="border-2 border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 font-bold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-all duration-200 cursor-pointer bg-transparent hover:bg-gray-200 dark:hover:bg-gray-800 hover:border-gray-500 dark:hover:border-gray-400 hover:-translate-y-0.5 active:translate-y-0 text-sm sm:text-base">
+            Get In Touch
+          </a>
         </div>
       </div>
 
